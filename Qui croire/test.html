@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<title>You have a Mission</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="lol"></div>
+	<script>
+		var lolDiv = document.getElementById('lol');
+		lolDiv.innerHTML += "(début du jeu vous êtes un informaticien de 24 ans habitant a paris.)";
+		lolDiv.innerHTML += '</br>';
+		lolDiv.innerHTML += "###Liaison En cours###";
+		lolDiv.innerHTML += '</br>';
+		lolDiv.innerHTML += "vous me recevez ?";
+		lolDiv.innerHTML += '</br>';
+		lolDiv.innerHTML += "oui (tapez 1)";
+		lolDiv.innerHTML += '</br>';
+		lolDiv.innerHTML += 'non (tapez 2)';
+		setTimeout(function () {
+			var z = prompt('Tapez 1 ou 2')
+			if (z == 2) {
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Très bien, C'est ton choix tu aurrais beaucoup aidé a la cause de l'humanité. ";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '<a href="fin1humanité.jpg" target=-blank><img src="IMG/fin2kikou.png"></a>';
+
+			}
+			else if (z < 1 || z > 2) {
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Très bien, C'est ton choix tu n'est peut etre pas assez mature pour ce jeu. ";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '<a href="fin2kikou.png" target=-blank><img src="IMG/fin2kikou.png"></a>';
+			}
+			else if (z == 1) {
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Bien nous pouvons donc continuer,";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Nous sommes une organisation secrète qui s'occupe de cas très compliquez...";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Et très important...";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Nous avons besoin de toi quelqu'un d'ordinaire sans histoire.";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Qui ne pourra pas se faire soupçonner.";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Rien ne sera dangereux ne t'inquietes pas.";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "Pour te donner plus d'information sur ta mission nous devons";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "nous rencontrer ; où habites-tu ?";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "(1) Paris ?";
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += "(2) Autres";
+				lolDiv.innerHTML += '</br>';
+				var y = prompt("tapez (1) ou (2) ");
+
+				if (y < 1 || y > 2) {
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "Très bien, C'est ton choix tu n'est peut etre pas assez mature pour ce jeu. ";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '<a href="fin2kikou.png" target=-blank><img src="IMG/fin2kikou.png"></a>';
+				}
+				else if (y == 1) {
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "Retrouvons-nous demain devant Notre-Dame à 15h ";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '#(fin du jour 1)#';
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "Vous allez donc à 15h au rendez-vous...";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "une personne vous attends";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "Que faire ?";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "1) j'y vais.C'est certainement lui.";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "2) Non ce n'est pas prudent vaut mieux rentrer.";
+					lolDiv.innerHTML += '</br>';
+
+					var x = prompt("tapez (1) ou (2) ?");
+					if (x < 1 || x > 2) {
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Très bien, C'est ton choix tu n'est peut etre pas assez mature pour ce jeu. ";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '<a href="fin2kikou.png" target=-blank><img src="IMG/fin2kikou.png"></a>';
+
+					}
+					else if (x == 1) {
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Vous vous approchez de la personne elle vous remarque";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "C'est une femme, elle n'a pas l'air veritablement menacante";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "La femme vous vois et s'approche de vous..vous laissez faire..";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Vous remarquez tout D'abord qu'elle a une demarche plutot inquiétante. ";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "elle ne marche pas en ligne droite et a une demarche très rebotique.";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "elle est maintenant devant vous, elle bouge la tete de haut en bas, 1 sel fois, comme un scanner,";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "elle vous montre un petit panneau proposant de la suivre";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "vous la suivez dans Notre-Dame..";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "elle vous montre une porte dérobée et vous montre un autre panneau qui vous dit :";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "C'est ici que votre vie vas basculer ne faite confiance à personne..";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Bonne chance...";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "vous entrée par la porte dérobée...";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Une toute petite pièce apparaît avec une très grosse machine au centre";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Un panneau est accrochée à la machine :";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "' Cette machine que tu vois va te téléporter dans notre QG..Rentre et laisse toi faire.";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += 'Vous entré et la machine commence a parler :';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "#Initialisation de la téléportation#";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "#Enclanchement !#";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "# Fin episode 1#";
+
+
+					}
+					else if (x == 2) {
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Vous vous eloignez discretement et rentrez chez vous.";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "vous vous posez pas mal de question:";
+						lolDiv.innerHTML += "- faut il que je continue ? Dois-je arrêter ? ";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Mais si je continue il vont savoir que je ne suis pas allez a mon rendez-vous";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Ca avez l'air serieux. ";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "qu'est-ce qu'ils vont faire ?,  me faire ?";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "non je ne peux pas continué mais donc que faire...?";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Je ne vois que deux solution...";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "#Fin episode 1#";
+
+					}
+				}
+
+				else if (y == 2) {
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "Ah...Nous allons donc continuer à parler ici. ";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "Tout d'abords il faut que tu me prometes quelque chose,";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "Aucune des instructions que je vais t'expliquer ne doivent fuiter.";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "1) oui J'ai très bien compris !";
+					lolDiv.innerHTML += '</br>';
+					lolDiv.innerHTML += "2) je ne suis pas sur je m'inquiéte un peu...";
+					var r = prompt("tapez (1) ou (2)");
+					if (r < 1 || r > 2) {
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Très bien, C'est ton choix tu n'est peut etre pas assez mature pour ce jeu. ";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '<a href="fin2kikou.png" target=-blank><img src="IMG/fin2kikou.png"></a>';
+					}
+
+					else if (r == 1) {
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Bon tu vas devoir nous donner ton adresse IP et nous allons te téléporter à nous,";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Tu n'as pas le temps de te poser des questions oui cela existe..";
+						lolDiv.innerHTML += '</br>';
+						var n = prompt(" tapez 1 pour donner votre adresse IP ")
+						if (n < 1 || n > 1) {
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "Très bien, C'est ton choix tu n'est peut etre pas assez mature pour ce jeu. ";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '<a href="fin2kikou.png" target=-blank><img src="IMG/fin2kikou.png"></a>';
+						}
+						else if (n == 1) {
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Initialisation de la téléportation#";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Enclanchement !#";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Fin épisode 1#";
+
+						}
+					}
+					else if (r == 2) {
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "Ne t'inquiéte pas tu n'aura rien a faire de dangeureux..";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "ta principale mission vas être de supervisée ce que l'on fait rien d'inquiétant ?";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "tu me fais confiance ?";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "1) oui ";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += "2) Non ";
+						var j = prompt(" tapez 1 ou 2")
+
+						if (j < 1 || j > 2) {
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "Très bien, C'est ton choix tu n'est peut etre pas assez mature pour ce jeu. ";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '<a href="fin2kikou.png" target=-blank><img src="IMG/fin2kikou.png"></a>';
+						}
+						else if (j == 1) {
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "Tu vas maintenant être téléporter dans notre QG";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "# Récupération de l'adresse IP #";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Initialisation de la téléportation#";
+							lolDiv.innerHTML += '</br>'; 
+							lolDiv.innerHTML += "#Enclanchement !#";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Fin épisode 1#";
+						}
+						else if (j == 2) {
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "je ne voulais pas en arriver là";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "Mais tu m'obliges à le faire je vais te forcer. ";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "# Récupération de l'adresse IP #";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Initialisation de la téléportation#";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Enclanchement !#";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += "#Fin épisode 1#";
+							lolDiv.innerHTML += '<center><h1> # Fin de Transmission # </h1><a href="organisation.jpg" target=-blank><img src="IMG/organisation.jpg"></a></br></br></br><a class="lien" href="organisation.html">Organisation</a></center>';
+						}
+					}
+				}
+			}
+		}, 8000)
+	</script>
+
+</body>
+
+</html>
