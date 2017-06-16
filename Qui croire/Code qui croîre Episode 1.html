@@ -11,7 +11,8 @@
 	<div id="lol"></div>
 	<script>
 		var lolDiv = document.getElementById('lol');
-		lolDiv.innerHTML += "(début du jeu vous êtes un informaticien de 24 ans habitant a paris.)";
+		lolDiv.innerHTML += "<b>(début du jeu vous êtes un informaticien de 24 ans habitant a paris.)</b>";
+		lolDiv.innerHTML += "<b>(But du jeu trouver toute les images de fin possible.)</b>";
 		lolDiv.innerHTML += '</br>';
 		lolDiv.innerHTML += "###Liaison En cours###";
 		lolDiv.innerHTML += '</br>';
@@ -26,9 +27,10 @@
 				lolDiv.innerHTML += '</br>';
 				lolDiv.innerHTML += '</br>';
 				lolDiv.innerHTML += '</br>';
-				lolDiv.innerHTML += "Très bien, C'est ton choix tu aurrais beaucoup aidé a la cause de l'humanité. ";
+				lolDiv.innerHTML += "<b>Très bien, C'est ton choix tu aurrais beaucoup aidé a la cause de l'humanité.</b> ";
 				lolDiv.innerHTML += '</br>';
-				lolDiv.innerHTML += '<a href="fin1humanité.jpg" target=-blank><img src="IMG/fin2kikou.png"></a>';
+				lolDiv.innerHTML += '</br>';
+				lolDiv.innerHTML += '<a href="fin1humanité.jpg" target=-blank><img src="IMG/fin1humanité.jpg"></a>';
 
 			}
 			else if (z < 1 || z > 2) {
@@ -38,6 +40,7 @@
 				lolDiv.innerHTML += '</br>';
 				lolDiv.innerHTML += '</br>';
 				lolDiv.innerHTML += "Très bien, C'est ton choix tu n'est peut etre pas assez mature pour ce jeu. ";
+				lolDiv.innerHTML += '</br>';
 				lolDiv.innerHTML += '</br>';
 				lolDiv.innerHTML += '<a href="fin2kikou.png" target=-blank><img src="IMG/fin2kikou.png"></a>';
 			}
@@ -149,6 +152,8 @@
 						lolDiv.innerHTML += '</br>';
 						lolDiv.innerHTML += '</br>';
 						lolDiv.innerHTML += "# Fin episode 1#";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '<center><h1> # Fin de Transmission # </h1><a href="organisation.jpg" target=-blank><img src="IMG/organisation.jpg"></a></br></br></br><a class="lien" href="organisation.html">Organisation</a></center>';
 
 
 					}
@@ -171,6 +176,8 @@
 						lolDiv.innerHTML += "Je ne vois que deux solution...";
 						lolDiv.innerHTML += '</br>';
 						lolDiv.innerHTML += "#Fin episode 1#";
+						lolDiv.innerHTML += '</br>';
+						lolDiv.innerHTML += '<center><h1> # Fin de Transmission # </h1><a href="organisation.jpg" target=-blank><img src="IMG/organisation.jpg"></a></br></br></br><a class="lien" href="organisation.html">Organisation</a></center>';
 
 					}
 				}, 10000)}
@@ -188,6 +195,7 @@
 					lolDiv.innerHTML += "1) oui J'ai très bien compris !";
 					lolDiv.innerHTML += '</br>';
 					lolDiv.innerHTML += "2) je ne suis pas sur je m'inquiéte un peu...";
+					setTimeout(function () {
 					var r = prompt("tapez (1) ou (2)");
 					if (r < 1 || r > 2) {
 						lolDiv.innerHTML += '</br>';
@@ -204,6 +212,7 @@
 						lolDiv.innerHTML += '</br>';
 						lolDiv.innerHTML += "Tu n'as pas le temps de te poser des questions oui cela existe..";
 						lolDiv.innerHTML += '</br>';
+						setTimeout(function () {
 						var n = prompt(" tapez 1 pour donner votre adresse IP ")
 						if (n < 1 || n > 1) {
 							lolDiv.innerHTML += '</br>';
@@ -221,9 +230,11 @@
 							lolDiv.innerHTML += '</br>';
 							lolDiv.innerHTML += '</br>';
 							lolDiv.innerHTML += "#Fin épisode 1#";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '<center><h1> # Fin de Transmission # </h1><a href="organisation.jpg" target=-blank><img src="IMG/organisation.jpg"></a></br></br></br><a class="lien" href="organisation.html">Organisation</a></center>';
 
 						}
-					}
+					}, 6000)}
 					else if (r == 2) {
 						lolDiv.innerHTML += '</br>';
 						lolDiv.innerHTML += '</br>';
@@ -236,6 +247,7 @@
 						lolDiv.innerHTML += "1) oui ";
 						lolDiv.innerHTML += '</br>';
 						lolDiv.innerHTML += "2) Non ";
+						setTimeout(function () {
 						var j = prompt(" tapez 1 ou 2")
 
 						if (j < 1 || j > 2) {
@@ -258,6 +270,8 @@
 							lolDiv.innerHTML += '</br>';
 							lolDiv.innerHTML += '</br>';
 							lolDiv.innerHTML += "#Fin épisode 1#";
+							lolDiv.innerHTML += '</br>';
+							lolDiv.innerHTML += '<center><h1> # Fin de Transmission # </h1><a href="organisation.jpg" target=-blank><img src="IMG/organisation.jpg"></a></br></br></br><a class="lien" href="organisation.html">Organisation</a></center>';
 						}
 						else if (j == 2) {
 							lolDiv.innerHTML += '</br>';
@@ -274,15 +288,14 @@
 							lolDiv.innerHTML += '</br>';
 							lolDiv.innerHTML += '</br>';
 							lolDiv.innerHTML += "#Fin épisode 1#";
+							lolDiv.innerHTML += '</br>';
 							lolDiv.innerHTML += '<center><h1> # Fin de Transmission # </h1><a href="organisation.jpg" target=-blank><img src="IMG/organisation.jpg"></a></br></br></br><a class="lien" href="organisation.html">Organisation</a></center>';
 						}
-					}
-				}
-
+					}, 7000)}
+				}, 8000)}
 			}, 8000)}	
 	}, 6000)
 </script>
 
 </body>
-
 </html>
