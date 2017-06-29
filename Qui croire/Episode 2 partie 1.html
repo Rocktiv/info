@@ -9,6 +9,22 @@
 
 <body>
 	<div id="lol"></div>
+		<script src="easteregg.js"></script>
+ 
+<script>
+var lolDiv = document.getElementById('lol');
+var easter_egg = new Konami(function() { 
+    alert('Konami code enclenchée');
+	lolDiv.innerHTML += '</br>';
+	lolDiv.innerHTML += "Easter eggs déclenchée !";
+	lolDiv.innerHTML += '</br>';
+	lolDiv.innerHTML += 'Bien joué !';
+	lolDiv.innerHTML += '</br>';
+	lolDiv.innerHTML += '<a href="konami.jpg" target=-blank><img src="IMG/konami.jpg"></a>';
+
+});
+</script>
+		
 	<script>
 		var lolDiv = document.getElementById('lol');
 		lolDiv.innerHTML += "<b>(si vous lisez vite, attendez un peu)<b>";
