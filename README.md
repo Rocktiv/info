@@ -7,5 +7,5 @@ Donc toujours redémarer du 1.
 <b>ATTENTION !</b>
 
 Ne marche pas sous Internet Exploreur.
-
+N'allez pas dans le dossier IMG merci (pour ne pas vous spoil)
 Bon Jeu Rocktiv.
