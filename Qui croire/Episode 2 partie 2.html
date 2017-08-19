@@ -9,7 +9,7 @@
 
 <body>
 	<div id="lol"></div>
-		<script src="easteregg.js"></script>
+	<script src="easteregg.js"></script>
  
 <script>
 var lolDiv = document.getElementById('lol');
@@ -24,16 +24,36 @@ var easter_egg = new Konami(function() {
 
 });
 </script>
-		
 	<script>
-            var lolDiv = document.getElementById('lol');
-            
+		var lolDiv = document.getElementById('lol');
+		lolDiv.innerHTML += "<b>(attendre un peu si vous lisez vite)</b>";
+		lolDiv.innerHTML += '</br>';
+			lolDiv.innerHTML += "<right><i>'Une conversation cryptée c'est ouverte'</i></right>";
+			lolDiv.innerHTML += '</br>';
+       	 	lolDiv.innerHTML += "1) Soit je les recontactent en leur disant qe j'ai pris peur...mais bon j'y crois pas trop..";
+			lolDiv.innerHTML += '</br>';
+            lolDiv.innerHTML += "2) Soit j'ouvre la conversation cryptée qu'on vient de m'envoyer... ";
+			setTimeout(function () {
+						var z = prompt('Tapez 1 ou 2')
+							if (z==1){
+								lolDiv.innerHTML += '</br>';
+								lolDiv.innerHTML += '</br>';
+								lolDiv.innerHTML += "Vous essayer donc de recontacter l'entreprise en leur envoyant un message. ";
+								lolDiv.innerHTML += '</br>';
+								lolDiv.innerHTML += "Comme aucune réponse ne vous parviens vous essayer d'ouvrir la conversations cryptée.";
+								lolDiv.innerHTML += '</br>';
+								lolDiv.innerHTML += 'Au moment ou vous ouvrez la conversations elle se ferme automatiquement, Il est trop tard.';
+							}
+							else if (z==2){
+								lolDiv.innerHTML += '</br>';
+								lolDiv.innerHTML += '</br>';
+								lolDiv.innerHTML += "Vous ouvrez la conversations et ce message s'affiche... ";
+								lolDiv.innerHTML += '</br>';
+								lolDiv.innerHTML += "";
 
+							}
+			}, 8000)
+</script>
 
-
-
-
-
-    </script>
 </body>
 </html>
