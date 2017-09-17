@@ -30,7 +30,7 @@ var easter_egg = new Konami(function() {
 		lolDiv.innerHTML += '</br>';
 			lolDiv.innerHTML += "<right><i>'Une conversation cryptée c'est ouverte'</i></right>";
 			lolDiv.innerHTML += '</br>';
-       	 	lolDiv.innerHTML += "1) Soit je les recontactent en leur disant qe j'ai pris peur...mais bon j'y crois pas trop..";
+       	 	lolDiv.innerHTML += "1) Soit je les recontactent en leur disant que j'ai pris peur...mais bon j'y crois pas trop..";
 			lolDiv.innerHTML += '</br>';
             lolDiv.innerHTML += "2) Soit j'ouvre la conversation cryptée qu'on vient de m'envoyer... ";
 			setTimeout(function () {
@@ -49,10 +49,26 @@ var easter_egg = new Konami(function() {
 								lolDiv.innerHTML += '</br>';
 								lolDiv.innerHTML += "Vous ouvrez la conversations et ce message s'affiche... ";
 								lolDiv.innerHTML += '</br>';
-								lolDiv.innerHTML += "";
+								lolDiv.innerHTML += '<p><a href="Autoportrait.jpg"><img class="darknet" src="IMG/fonddarknet.jpg" alt="Autoportrait" /></a></p>'
+								setTimeout(function(){
+											var y = prompt('Tapez 1 ou 2')
+												if (y==1){
+													lolDiv.innerHTML += '</br>';
+													lolDiv.innerHTML += '</br>';
+													lolDiv.innerHTML += "Vous êtes une personne sérieuse cela est une grande qualité de nos jours ";
 
+
+												}
+												else if (y==2){
+														lolDiv.innerHTML += '</br>';
+													lolDiv.innerHTML += '</br>';
+													lolDiv.innerHTML += "Vous êtes une personne peu respectable dommage... ";
+
+												}
+
+								}, 5000)
 							}
-			}, 8000)
+			}, 11000)
 </script>
 
 </body>
