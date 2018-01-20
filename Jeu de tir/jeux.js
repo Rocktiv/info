@@ -1,5 +1,5 @@
 var testbouton2=false
-var testbouton=false 
+var testbouton=false
 var bouletX = 350;
 var bouletY=600;
 var dx = 0;
@@ -14,7 +14,7 @@ var angle=90
 let timer = 30
 function setup(){
 
-	createCanvas (800, 600);
+  createCanvas (800, 600);   
      run = createButton('aide');
       run.position(25, 250);
       run.mousePressed(aide);
@@ -97,7 +97,7 @@ function aide(){
   rect(0, -10, 50, 20);
   pop();
   limite=limite+3
-
+      
 }
 	}
 function keyPressed (){
@@ -116,8 +116,4 @@ angle=angle+10
     dy = 15* sin(-angle*PI/180);
   }
 }
-    
-    
-  
-	
-	 document.write(' </a></center></br><center><a class="lien" href="javascript:location.reload();">Nouvelle partie</a></center>')
+ document.write(' </a></center></br><center><a class="lien" href="javascript:location.reload();">Nouvelle partie</a></center>')
